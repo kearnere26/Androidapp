@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">GradeCalculator</string>
+    <string name="theWelcome">Welcome!</string>
+    <string name="Percentage">Percentage Grading</string>
+    <string name="Value">Start Grading</string>
+    <string name="vaWelcome">Please enter a value in each block.</string>
+    <string name="yScore">Your Points/%</string>
+    <string name="mPoints">Max Points/%</string>
+    <string name="assignments">Assignments (Things that are not tests, quizes or projects)</string>
+    <string name="pushNumber">Add</string>
+    <string name="clrValues">Clear</string>
+    <string name="pushNumber2">Add</string>
+    <string name="pushNumber3">Add</string>
+    <string name="pushNumber4">Add</string>
+    <string name="NumberFormatt">i.e. 1001</string>
+    <string name="initializedValue">0</string>
+    <string name="aView">Assignments</string>
+    <string name="pView">Projects</string>
+    <string name="eView">Exams</string>
+    <string name="qView">Quizes</string>
+    <string name="doTheMagic">Compute Number</string>
+    <string name="letterGrade">Grade</string>
+    <string name="doTheMagicAsPercent">Compute Percent</string>
+    <string name="Creator">Created by Robert Kearney</string>
+    <string name="Directions">Click the start grading button and start adding points or the
+        percentage for each item, fill out the maximum points or percentage of total grade,
+        then compute!</string>
+</resources>

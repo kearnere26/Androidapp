@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mpoint1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBD0D3"
+    tools:context=".ValueActivity">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/doTheMagicAsPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="176dp"
+            android:onClick="compareTotal"
+            android:text="@string/doTheMagicAsPercent"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/doTheMagic"
+            app:layout_constraintTop_toBottomOf="@+id/clrValuesE" />
+
+        <TextView
+            android:id="@+id/qView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:text="@string/qView"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/maxPointsQ"
+            app:layout_constraintTop_toBottomOf="@+id/pView" />
+
+        <TextView
+            android:id="@+id/eView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:text="@string/eView"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/maxPointsE"
+            app:layout_constraintTop_toBottomOf="@+id/qView" />
+
+        <TextView
+            android:id="@+id/pView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:text="@string/pView"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/maxPointsP"
+            app:layout_constraintTop_toBottomOf="@+id/aView" />
+
+        <TextView
+            android:id="@+id/addedNumQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="42dp"
+            android:text="@string/initializedValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/qView"
+            app:layout_constraintTop_toBottomOf="@+id/addedNumP" />
+
+        <TextView
+            android:id="@+id/addedNumE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="42dp"
+            android:text="@string/initializedValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/eView"
+            app:layout_constraintTop_toBottomOf="@+id/addedNumQ" />
+
+        <TextView
+            android:id="@+id/addedNumP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="42dp"
+            android:text="@string/initializedValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/pView"
+            app:layout_constraintTop_toBottomOf="@+id/addedNumA" />
+
+        <EditText
+            android:id="@+id/maxPointsA"
+            android:layout_width="92dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="@string/NumberFormatt"
+            android:inputType="number|numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="#00000000"
+            app:layout_constraintStart_toEndOf="@+id/numToCalculateA"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <EditText
+            android:id="@+id/numToCalculateA"
+            android:layout_width="92dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="@string/NumberFormatt"
+            android:inputType="number|numberDecimal"
+            android:labelFor="@id/numToCalculateA"
+            android:minHeight="48dp"
+            android:textColorHint="#00000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yScore"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/yScore"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/yScore"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/mPoints"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/yScore"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pushNumberA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/customerbutton2"
+            android:onClick="storeValueA"
+            android:text="@string/pushNumber"
+            android:textColor="#670404"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numToCalculateA"
+            tools:ignore="DuplicateSpeakableTextCheck,UsingOnClickInXml" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clrValuesA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/customerbutton2"
+            android:onClick="clearData"
+            android:text="@string/clrValues"
+            android:textColor="#670404"
+            app:layout_constraintStart_toEndOf="@+id/pushNumberA"
+            app:layout_constraintTop_toBottomOf="@+id/maxPointsA"
+            tools:ignore="DuplicateSpeakableTextCheck,UsingOnClickInXml" />
+
+        <EditText
+            android:id="@+id/numToCalculateP"
+            android:layout_width="92dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/NumberFormatt"
+            android:inputType="number|numberDecimal"
+            android:labelFor="@id/numToCalculateP"
+            android:textColorHint="#00000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pushNumberA" />
+
+        <EditText
+            android:id="@+id/maxPointsP"
+            android:layout_width="92dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/NumberFormatt"
+            android:inputType="number|numberDecimal"
+            android:textColorHint="#00000000"
+            app:layout_constraintStart_toEndOf="@+id/numToCalculateP"
+            app:layout_constraintTop_toBottomOf="@+id/clrValuesA" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pushNumberP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/customerbutton2"
+            android:onClick="storeValueA"
+            android:text="@string/pushNumber2"
+            android:textColor="#670404"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numToCalculateP"
+            tools:ignore="UsingOnClickInXml" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clrValuesP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/customerbutton2"
+            android:onClick="clearData"
+            android:text="@string/clrValues"
+            android:textColor="#670404"
+            app:layout_constraintStart_toEndOf="@+id/pushNumberP"
+            app:layout_constraintTop_toBottomOf="@+id/maxPointsP" />
+
+        <EditText
+            android:id="@+id/numToCalculateQ"
+            android:layout_width="92dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/NumberFormatt"
+            android:inputType="number|numberDecimal"
+            android:labelFor="@id/numToCalculateQ"
+            android:minHeight="48dp"
+            android:textColorHint="#00000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pushNumberP" />
+
+        <EditText
+            android:id="@+id/maxPointsQ"
+            android:layout_width="92dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/NumberFormatt"
+            android:inputType="number|numberDecimal"
+            android:textColorHint="#00000000"
+            app:layout_constraintStart_toEndOf="@+id/numToCalculateQ"
+            app:layout_constraintTop_toBottomOf="@+id/clrValuesP" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pushNumberQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/customerbutton2"
+            android:onClick="storeValueA"
+            android:text="@string/pushNumber3"
+            android:textColor="#670404"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numToCalculateQ"
+            tools:ignore="UsingOnClickInXml" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clrValuesQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/customerbutton2"
+            android:onClick="clearData"
+            android:text="@string/clrValues"
+            android:textColor="#670404"
+            app:layout_constraintStart_toEndOf="@+id/pushNumberQ"
+            app:layout_constraintTop_toBottomOf="@+id/maxPointsQ"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <EditText
+            android:id="@+id/numToCalculateE"
+            android:layout_width="92dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/NumberFormatt"
+            android:inputType="number|numberDecimal"
+            android:labelFor="@id/numToCalculateE"
+            android:minHeight="48dp"
+            android:textColorHint="#00000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pushNumberQ"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/maxPointsE"
+            android:layout_width="92dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/NumberFormatt"
+            android:inputType="number|numberDecimal"
+            android:textColorHint="#00000000"
+            app:layout_constraintStart_toEndOf="@+id/numToCalculateE"
+            app:layout_constraintTop_toBottomOf="@+id/clrValuesQ" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pushNumberE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/customerbutton2"
+            android:onClick="storeValueA"
+            android:text="@string/pushNumber4"
+            android:textColor="#670404"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numToCalculateE"
+            tools:ignore="UsingOnClickInXml" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clrValuesE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/customerbutton2"
+            android:onClick="clearData"
+            android:text="@string/clrValues"
+            android:textColor="#670404"
+            app:layout_constraintStart_toEndOf="@+id/pushNumberE"
+            app:layout_constraintTop_toBottomOf="@+id/maxPointsE" />
+
+        <TextView
+            android:id="@+id/addedNumA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="42dp"
+            android:text="@string/initializedValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/aView"
+            app:layout_constraintTop_toBottomOf="@+id/gradePercentage" />
+
+        <TextView
+            android:id="@+id/aView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57dp"
+            android:text="@string/aView"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/maxPointsA"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/doTheMagic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="176dp"
+            android:onClick="compareTotal"
+            android:text="@string/doTheMagic"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pushNumberE" />
+
+        <TextView
+            android:id="@+id/letterGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/letterGrade"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/gradePercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="42dp"
+            android:text="@string/initializedValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/letterGrade"
+            app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
